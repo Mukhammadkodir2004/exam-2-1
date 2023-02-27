@@ -1,0 +1,115 @@
+.main__hero-barner{
+    // position: relative;
+    // margin-bottom: 150px;
+    
+
+    @include for-tablet{
+        // position: relative;
+        margin: 0 auto;
+    }
+
+    @include for-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-box{
+        // position: absolute;
+        background: #FAFAFA;
+        display: inline-block;
+        // bottom: 0;
+        transform: translateY(-362px);
+
+        @include for-tablet{
+            // position: absolute;
+            // bottom: 0;
+            transform: translateY(-282px);
+        }
+
+        @include for-mobile{
+            // position: absolute;
+            // bottom: 0;
+            transform: translateY(0);
+            // padding: 0 32px;
+            margin-bottom: 96px;    
+        }
+
+        &-description{
+            padding-top: 56px;
+            padding-right: 55px;
+            padding-bottom: 53px;
+            font-family: $headingFonts;
+            color: $mainColor;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: -0.446429px;
+            max-width: 445px;
+
+
+            @include for-tablet{
+                padding-top: 56px;
+                padding-right: 56px;
+                padding-bottom: 48px;
+                font-size: 40px;
+                line-height: 42px;
+                letter-spacing: -0.357143px;
+            }
+            @include for-mobile{
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 42px;
+                letter-spacing: -0.357143px;
+                margin-bottom: 32px;    
+                // margin: 0 auto;
+                padding: 0;
+                // max-width: 311px;
+                // text-align: center;
+            }
+        }
+        &-btns{
+            display: flex;
+            align-items: center;
+            max-width: 200px;
+            
+
+            &-logo{
+                
+                padding: 18px 16px;
+                background: #000000;
+                display: block;
+            }
+            &-link{
+                display: block;
+                padding: 18px 35px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background-color: #203A4C;
+                text-decoration: none ;
+                
+            }
+        }
+    }
+}
+.main__hero-barner-box-btns-link:active{
+  background-color: #5FB4A2;
+}
+.main__hero-barner-box-btns-logo:active{
+    background-color: #5FB4A2;
+}
+
+.main__hero-barner-img-hero{
+    max-width: 100%;
+    
+    @include for-mobile{
+        margin-bottom: 24px;
+    }
+}
+.main__portfolio-main-img{
+    max-width: 100%;
+}

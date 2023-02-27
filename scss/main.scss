@@ -1,0 +1,35 @@
+@import "./container";
+@import "./general";
+@import "./fonts";
+@import "./mixin";
+@import "./variables";
+@import "./blocks/blocks";
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Public Sans";
+  background-color: #F2F2F2;
+}
+
+img {
+//   max-width: 100%;
+  height: auto;
+}
+
+.container{
+    max-width: 1218px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
